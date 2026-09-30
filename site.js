@@ -1,5 +1,9 @@
 // Stacknity Technologies - shared site behaviour
 (function(){
+  // Keep the browser icon aligned with the white and blue theme.
+  var favicon=document.querySelector('link[rel="icon"]');
+  if(favicon){favicon.href=favicon.href.replace(/%23060a08/g,'%23ffffff').replace(/%236fffb4/g,'%23185adb');}
+
   // nav scroll state
   var nav=document.getElementById('nav');
   if(nav){window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>40);},{passive:true});}
