@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ravishankarbera.github.io/Stacknity-Technologies/sitemap.xml
