@@ -273,3 +273,12 @@ textarea.ta:focus{border-color:rgba(24,90,219,.5)}
 .field input,.field select,textarea.ta{background-color:#fff}
 .svc{box-shadow:0 8px 30px rgba(16,37,68,.035)}
 .svc ul li a{color:var(--mint)!important;text-decoration:underline!important;text-underline-offset:3px}
+/* Responsive navigation and blue-tinted hero artwork. */
+.spot-reveal img{filter:grayscale(1) invert(1) sepia(.3) saturate(2) hue-rotate(175deg);opacity:.85}
+@media(max-width:760px){
+  .nav-inner{gap:12px;padding:16px 20px}
+  .nav-cta .btn-primary{display:none}
+  .brand{gap:8px;min-width:0}
+  .brand span{font-size:.62rem;letter-spacing:.14em}
+  .nav-toggle{flex:none}
+}
